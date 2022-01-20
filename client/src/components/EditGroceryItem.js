@@ -18,7 +18,7 @@ const EditGroceryItem = ({todo}) => {
             body: JSON.stringify(body)
         })
 
-        window.location = "/";
+        window.location = "/list";
 
         }catch (err) {
             console.error(err.message);

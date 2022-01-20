@@ -32,14 +32,14 @@ const ListGroceryItem = () => { //function used for listing items
     }
 
     useEffect(() => {
-        getGroceryItems();  //use fucntion to get grocery items
+        getGroceryItems();  //use function to get grocery items
     }, []);
 
     
     return (
     <Fragment>
-  
-<table className="table mt-5 text-center table-dark table-striped table-bordered " >
+        <div className = "container">
+<table className="table mt-5 text-center table-dark table-striped table-bordered  " >
     <caption> Current List of Items</caption>
     <thead className="font-italic">
       <tr>
@@ -59,7 +59,7 @@ const ListGroceryItem = () => { //function used for listing items
      ))}
     </tbody>
   </table>
-
+</div>
  
     </Fragment>
 
